@@ -1,0 +1,135 @@
+body {
+  font-family: 'Montserrat';
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/*Header*/
+
+li, a, button {
+  font-weight: 500;
+  font-size: 18px; /* Increased font size */
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%; /* Adjusted padding for mobile */
+  flex-wrap: wrap; /* Ensure header content wraps on small screens */
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 22px; /* Increased font size */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 15px; /* Adjusted padding */
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: rgb(13, 79, 201)
+}
+
+button {
+  color: white;
+  padding: 10px 20px; /* Adjusted padding */
+  background-color: rgba(0, 136, 169, 1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  transform: rotateY(180deg)
+}
+
+/*Home page sections*/
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Adjusted max-width */
+  margin: auto;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+}
+
+.text-container {
+  padding: 15px; /* Adjusted padding */
+  background-color: #fff;
+  overflow-y: auto;
+  max-height: 400px;
+  margin: 10px; /* Adjusted margin */
+}
+
+.section {
+  margin-bottom: 15px; /* Adjusted margin */
+}
+
+.contact-container {
+  padding: 15px; /* Adjusted padding */
+  background-color: #fff;
+  margin: 10px; /* Adjusted margin */
+}
+
+.contact-item {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin: 15px; /* Adjusted margin */
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  li, a, button {
+    font-size: 16px; /* Adjusted font size for small screens */
+  }
+
+  .header {
+    flex-direction: column; /* Stack header content vertically */
+    text-align: center; /* Center text */
+  }
+
+  .nav-links li {
+    display: block; /* Stack nav links vertically */
+    padding: 10px 0; /* Adjusted padding */
+  }
+}
